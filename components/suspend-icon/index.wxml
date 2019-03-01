@@ -1,0 +1,3 @@
+<view class="container" bind:tap="goHome">
+  <image class="icon" src='/components/z-image/home-icon.png'></image>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "com-reward": "../../components/reward/index",
+    "com-time": "../../components/time/index"
+  },
+  "navigationBarTitleText": "参与活动",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black"
+}

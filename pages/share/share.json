@@ -1,0 +1,13 @@
+{
+  "usingComponents": {
+    "com-help": "../../components/help/index",
+    "com-reward": "../../components/reward/index",
+    "com-rule": "../../components/rule/index",
+    "com-time": "../../components/time/index",
+    "com-title": "../../components/title/index",
+    "com-list": "../../components/list/index",
+    "com-partList": "../../components/part-list/index",
+    "com-icon": "../../components/suspend-icon/index"
+  },
+  "navigationBarTitleText": "活动详情"
+}

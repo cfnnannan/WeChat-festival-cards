@@ -1,0 +1,74 @@
+<view class="body">
+  <view class="banner">
+    <view class="banner-title">{{hospitalName}}</view>
+    <view class="com-time">
+      <com-time ruleTime="{{ruleTime}}" fromSource="{{fromOther}}"></com-time>
+    </view>
+  </view>
+  <view class="layor-bgc">
+    <view class="layor-invite">
+      <view class="info">
+        <block wx:if="{{listSize != 3}}">
+          <com-title topTitle="{{masterNickname}}成为{{hospitalName}}特邀福主!" bomTitle="送ta祝福可中大奖"></com-title>
+        </block>
+        <block wx:else>
+          <com-title topTitle="集福完成" bomTitle="福主已获得抽奖资格，可中大奖!"></com-title>
+        </block>
+        <form bindsubmit="formSubmit" report-submit="true">
+          <view class="container">
+            <view class="first">
+                <image class="header-content" src="/components/z-image/layor-header.png"></image>
+                <view class="user-content">
+                  <image class="avatar" src="{{avatarUrl}}"></image>
+                  <button class="first-identity">福主</button>
+                </view>
+            </view>
+            <view class="second">
+              <button open-type="getUserInfo" bindgetuserinfo="getAssistanceUser" formType="submit" class="item">
+                <image src="{{showAssistanceAvatarOne?avatorOne:fromShare}}"></image>
+                <text>祝福平安</text>
+              </button>
+              <button open-type="getUserInfo" bindgetuserinfo="getAssistanceUser" formType="submit" class="item">
+                <image src="{{showAssistanceAvatarTwo?avatorTwo:fromShare}}"></image>
+                <text>祝福健康</text>
+              </button>
+              <button open-type="getUserInfo" bindgetuserinfo="getAssistanceUser" formType="submit" class="item">
+                <image src="{{showAssistanceAvatarThree?avatorThree:fromShare}}"></image>
+                <text>祝福长寿</text>
+              </button>
+            </view>
+          </view>
+        </form>
+      </view>
+      <button class="btn" open-type="getUserInfo" bindgetuserinfo="getAssistanceUser">为ta祝福</button>
+    </view>
+    <com-reward rewardInfo="{{rewardInfo}}" fromSource="{{fromOther}}"></com-reward>
+  </view>
+  
+  <!-- ta们在参与 -->
+  <view class="layor-bgc">
+    <com-partList headImgList="{{headImgList}}"></com-partList>
+  </view>
+  <view class="layor-bgc">
+    <com-rule ruleInfo="{{ruleInfo}}"></com-rule>
+  </view>
+  <com-icon></com-icon>
+</view>
+
+<!-- 助力弹窗 -->
+<view class="model">
+  <view class="mask" wx:if="{{showModal}}" bindtap='cancelModel'></view>
+  <view class="modal-dlg" wx:if="{{showModal}}">
+    <image class="content-img" src="/image/pig@model.png">
+      <image class="cancel-img" src="/image/cancel.png" bindtap='cancelModel'/>
+      <view class="title-layor">
+        <view>{{masterNickname}}</view>
+        <view>感谢您的新春祝福</view>
+      </view>
+      <view class="time">
+        <com-time ruleTime="{{ruleTime}}" fromSource="{{fromOther}}"></com-time>
+      </view>
+      <view class="layor-btn"><button class="btn" open-type="getUserInfo" bindgetuserinfo="getFuzhuUser">我也要参加领大奖</button></view>
+    </image>
+  </view>
+</view>

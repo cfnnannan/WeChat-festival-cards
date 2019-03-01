@@ -1,0 +1,74 @@
+@import "/components/help/index.wxss";
+.layor-invite .btn {
+  margin-bottom: 0;
+}
+.layor-invite .info .text {
+  text-align: center;
+  font-size: 26rpx;
+  padding-top: 10rpx;
+}
+.mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.7;
+}
+ 
+.modal-dlg{
+  width: 750rpx;
+  position: fixed;
+  top: 10%;
+  left: 0;
+  z-index: 9999;
+  background: transparent;
+  border-radius: 36rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.modal-dlg .content-img {
+  width: 670rpx;
+  height: 799rpx;
+  position: relative;
+}
+.modal-dlg .cancel-img {
+  position: absolute;
+  top: 0;
+  right: 85rpx;
+  width: 52rpx;
+  height: 52rpx;
+}
+.modal-dlg .title-layor {
+  position:relative;
+  top:-555rpx;
+  text-align:center;
+}
+.modal-dlg .title-layor view {
+  color:#fff;
+}
+.modal-dlg .time {
+  position:relative;
+  color:#fff;
+  bottom: 245rpx;
+  text-align:center;
+  z-index: 9999;
+}
+.modal-dlg .layor-btn {
+  position:relative;
+  bottom: 230rpx;
+  text-align:center;
+  z-index: 9999;
+}
+.modal-dlg .btn {
+  background: linear-gradient(#fdeb6a,#fec00e);
+  border-radius: 100rpx;
+  width: 400rpx;
+  color: #e24a36;
+  margin-bottom: 26rpx;
+  line-height: 75rpx;
+  z-index: 9999;
+}

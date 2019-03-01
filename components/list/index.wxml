@@ -1,0 +1,14 @@
+<view class="container">
+  <view class="layor">
+    <view class="title-layor">
+      <view class="line"></view><text class="title">中奖名单</text><view class="line"></view>
+    </view>
+    <view class="list">
+      <view class="item" wx:for="{{list}}" wx:key="{{index}}">
+        <text class="left">{{item.grade}}</text>
+        <text class="right">{{item.nickname}}</text>
+        <image src="{{item.headimgUrl}}"></image>
+      </view>
+    </view>
+  </view>
+</view>

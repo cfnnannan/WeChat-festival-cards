@@ -1,0 +1,91 @@
+@import "/public-css/layor-title.wxss";
+@import "/public-css/layor-title.wxss";
+
+.body .tip-img {
+  animation: hidetip 10s;
+  animation-fill-mode: forwards;
+  animation-delay: 5s;  /* 停留5秒后消失 */
+  position: fixed;
+  top: 8rpx;
+  width: 320rpx;
+  z-index: 9999;
+  right: 32rpx;
+}
+@keyframes hidetip {
+  from {
+    opcity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes hidetip {
+  from {
+    opcity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+.body .win-tip {
+  height: 82rpx;
+}
+.body .home-tip {
+  height: 54rpx;
+}
+.body .layor-bgc .unlike-btn {
+  background: linear-gradient(#fdeb6a,#fec00e);
+  border-radius: 100rpx;
+  font-weight: 800;
+  font-size: 44rpx;
+  width: 400rpx;
+  color: #e24a36;
+  box-shadow: 0px 2px 2px #b78901;
+  margin-bottom: 26rpx;
+  line-height: 94rpx;
+
+  animation-name: scaleDraw;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-duration: 5s;
+}
+@keyframes scaleDraw {
+  0%{
+  transform: scale(0.8);
+  }
+  25%{
+  transform: scale(1.0);
+  }
+  50%{
+  transform: scale(0.8);
+  }
+  75%{
+  transform: scale(1.0);
+  }
+  100%{
+  transform: scale(0.8);
+  }
+}
+.body .layor-bgc .content-title {
+  font-size: 26rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.body .layor-bgc .win-img-layor {
+  text-align: center;
+  padding-top: 20rpx;
+}
+.body .layor-bgc .win-img {
+  width: 193rpx;
+  height: 251rpx;
+}
+
+.body .layor-bgc .layor-invite .btn{
+  margin-bottom: 0;
+}
+.body .layor-bgc .win-bom-text {
+  font-size: 20rpx;
+  color: #a0504a;
+  text-align: center;
+  margin-top: 22rpx;
+}

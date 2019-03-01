@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="layor">
+    <view class="title-layor">
+      <view class="line"></view><text class="title">ta们在参与</text><view class="line"></view>
+    </view>
+    <view class="per-list">
+      <image class="header" wx:for="{{list}}" wx:key="{{index}}" src="{{item}}"></image>
+    </view>
+  </view>
+</view>

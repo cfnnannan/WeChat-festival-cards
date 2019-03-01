@@ -1,0 +1,10 @@
+<view class="body-home">
+  <view class="header-container">
+    <button class="user-header" open-type="getUserInfo" bindgetuserinfo="getUserInfo">
+      <image class="avatar" src="{{headimgUrl}}"></image>
+      <text class="text">{{nickname}}</text>
+    </button>
+  </view>
+  <com-join></com-join>
+  <com-result></com-result>
+</view>

@@ -1,0 +1,32 @@
+@import "/public-css/layor-title.wxss";
+.container .list {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 15rpx;
+  width:680rpx;
+  margin:0 auto;
+
+}
+.container .list .item {
+  display: flex;
+  justify-content: space-around;
+  padding: 20rpx;
+}
+.container .list .item image {
+  width: 72rpx;
+  height: 72rpx;
+  border-radius: 50%;
+}
+.container .list .item text {
+  font-size: 28rpx;
+  margin-top: 18rpx;
+}
+.container .list .item .left {
+  width: 20%;
+  text-align: center;
+}
+.container .list .item .right {
+  width: 40%;
+  text-align: center;
+}

@@ -1,0 +1,6 @@
+<view class="layor-win">
+  <view class="header-type">
+    <text>{{topTitle}}</text>
+    <text>{{bomTitle}}</text>
+  </view>
+</view>

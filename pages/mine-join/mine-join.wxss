@@ -1,0 +1,21 @@
+.body-home {
+  padding: 20rpx;
+
+}
+.body-home .container {
+  background: #fff;
+  box-shadow:0px 2px 8px -3px #baf7ed;
+  margin-bottom: 20rpx;
+  border-radius: 12rpx;
+}
+.body-home .container-empty .layor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50%;
+  align-items: center;
+}
+.body-home .container-empty .layor image {
+  width: 246rpx;
+  height: 182rpx;
+  margin-bottom: 52rpx;
+}

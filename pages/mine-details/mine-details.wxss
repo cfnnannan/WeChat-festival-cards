@@ -1,0 +1,163 @@
+.body-home {
+  padding: 20rpx;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 15rpx;
+  box-shadow:0px 2px 8px -3px #cbfaf2;
+  margin-bottom: 20rpx;
+}
+.layor-top {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #e2e9e8;
+  padding: 20rpx;
+  align-items: center;
+}
+.layor-top .left {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.layor-top .btn {
+  border: none;
+  background: #ffba00;
+  border-radius: 30px;
+  width:175rpx;
+  height:60rpx;
+  line-height:60rpx;
+  font-size: 26rpx;
+  margin: 0;
+}
+.layor-top .disable {
+  background: #ccc;
+}
+.layor-top .left .first-line {
+  font-size: 26rpx;
+}
+.layor-top .left .second-line {
+  font-size: 44rpx;
+  margin: 18rpx 0;
+  color: #3eceb6;
+}
+.layor-top .left .third-line {
+  font-size: 20rpx;
+  color: #989898;
+  margin-bottom: 20rpx;
+}
+.layor-bottom {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15rpx 20rpx;
+  background: #eee;
+}
+.layor-bottom .msg {
+  color: #989898;
+  font-size: 22rpx;
+  display: -webkit-box;
+  word-break: break-all;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp:2;
+}
+.container-empty .layor {
+  display: flex;
+  flex-direction: column;
+  margin-top: 50%;
+  align-items: center;
+}
+.container-empty .layor image {
+  width: 246rpx;
+  height: 182rpx;
+  margin-bottom: 52rpx;
+}
+.layor-top .right .bottom {
+  text-align: center;
+  border: none;
+  background:transparent;
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 0;
+  line-height: 54rpx
+}
+.layor-top .right .bottom image {
+  width: 18rpx;
+  height: 12rpx;
+}
+.icon-deg-top {
+  transform: rotate(180deg) !important;
+}
+.icon-deg-bom {
+  transform: rotate(360deg) !important;
+}
+.layor-top .right .bottom text {
+  font-size: 22rpx;
+  color:#989898;
+  margin-right: 8rpx;
+}
+.model .mask {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: #000;
+  z-index: 9000;
+  opacity: 0.5;
+}
+.model .modal-dlg{
+  width: 640rpx;
+  height: 630rpx;
+  position: fixed;
+  top: 20%;
+  left: 7.5%;
+  z-index: 9999;
+  background: #fff;
+  border-radius: 12rpx;
+  text-align: center;
+}
+.model .modal-dlg .face-icon {
+  width: 332rpx;
+  height: 230rpx;
+  padding-top: 35rpx;
+  margin-right:70rpx;
+}
+.model .modal-dlg .title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 30rpx;
+  width: 70%;
+}
+.model .modal-dlg .title .top {
+  color: #ff613b;
+  margin: 20rpx 0;
+}
+.model .modal-dlg .title text {
+  color: #989898;
+}
+.model .modal-dlg .confirm-btn {
+  position: absolute;
+  bottom: 0;
+  border-top: 2rpx solid #f1f5f4;
+  width: 100%;
+  height: 95rpx;
+  display: flex;
+}
+.model .modal-dlg .confirm-btn button {
+  width: 50%;
+  height: 95rpx;
+  line-height: 95rpx;
+  background: #fff;
+  color: #2d2d2d;
+}
+.model .modal-dlg .confirm-btn button:first-child {
+  border-right: 1px solid #f1f5f4
+}

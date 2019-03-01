@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "com-reward": "../../components/reward/index",
+    "com-time": "../../components/time/index"
+  },
+  "navigationBarTitleText": "首页",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black"
+}

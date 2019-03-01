@@ -1,0 +1,42 @@
+@import "/public-css/layor-title.wxss";
+.container-home {
+  padding: 0 20rpx;
+}
+.container-home .name {
+  color: #3eceb6;
+  font-size: 34rpx;
+}
+.container-home .layor .title {
+  font-size: 28rpx;
+  color: #2d2d2d;
+}
+.container-home .layor .info {
+  display: flex;
+  flex-direction: column;
+  font-size: 26rpx;
+}
+.container-home .layor .info text {
+  line-height: 42rpx;
+  color: #989898;
+}
+
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container .layor .info {
+  background: #fff;
+  border-radius: 15rpx;
+  width: 680rpx;
+  display: flex;
+  justify-content: center;
+  padding: 20rpx 0;
+}
+.container .layor .info text {
+  font-size: 28rpx;
+  color: #953831;
+  line-height: 56rpx;
+}

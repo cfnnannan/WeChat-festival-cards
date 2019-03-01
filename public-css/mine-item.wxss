@@ -1,0 +1,26 @@
+.container {
+  background: #fff;
+  padding: 0 20rpx;
+}
+.container .layor {
+  padding: 30rpx 14rpx;
+  border-bottom: 1px solid #e2e9e8;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.container .layor .left .icon {
+  width: 34rpx;
+  height: 34rpx;
+}
+.container .layor .right {
+  height: 26rpx;
+  width: 17rpx;
+}
+.container .layor .left .icon {
+  margin-right: 24rpx;
+}
+.container .layor .left text {
+  font-size: 28rpx;
+}

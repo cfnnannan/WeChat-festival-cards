@@ -1,0 +1,4 @@
+@import "/public-css/mine-item.wxss";
+.container .layor {
+  border-bottom-color: transparent;
+}

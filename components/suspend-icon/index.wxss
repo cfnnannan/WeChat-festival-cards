@@ -1,0 +1,10 @@
+.container {
+  position: fixed;
+  bottom: 74rpx;
+  right: 30rpx;
+  z-index: 99999
+}
+.container .icon {
+  width: 68rpx;
+  height: 68rpx;
+}

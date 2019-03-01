@@ -1,0 +1,47 @@
+<form bindsubmit="formSubmit" report-submit="true">
+  <view class="body">
+    <image class="tip-img {{showTip=='/image/win@tip.png'? 'win-tip':'home-tip'}}" src="{{showTip}}"></image>
+    <view class="banner">
+      <view class="banner-title">{{hospitalName}}</view>
+      <view class="com-time">
+        <com-time ruleTime="{{ruleTime}}" fromSource="{{fromOther}}"></com-time>
+      </view>
+    </view>
+    <view class="layor-bgc">
+      <com-title topTitle="{{topTitle}}" bomTitle="{{bomTitle}}"></com-title>
+      <block wx:if="{{ participationId == -1}}">
+        <view class="content-title">参与集福活动集齐平安福、健康福、长寿福可中大奖</view>
+        <button class="unlike-btn" open-type="getUserInfo" bindgetuserinfo="getUserInfo" formType="submit">立即参与</button>
+      </block>
+      
+      <block wx:elif="{{isEnd > 0}}">
+        <view class="win-img-layor">
+          <image class="win-img" src="{{winName == undefined?failImg:successImg}}" />
+        </view>
+        <view class="win-bom-text" hidden='{{winName == undefined}}'>点击右侧悬浮按钮回到首页，在"我的-中奖记录"查看</view>
+        <com-list winList="{{winList}}"></com-list>
+      </block>
+      
+      <block wx:else>
+        <view class="layor-invite">
+          <com-help participationId="{{participationId}}" activityId="{{activityId}}" avatarUrl="{{avatarUrl}}" assistanceAvatarList="{{assistanceAvatarList}}"></com-help>
+          <block wx:if="{{listSize < 3 }}" >
+            <button formType="submit" class="btn" open-type="share">邀请好友为我祝福</button>
+          </block>
+          <block wx:else><button class="btn" bind:tap="shareFull">邀请好友为我祝福</button></block>
+        </view>
+      </block>
+      <com-reward rewardInfo="{{rewardInfo}}" fromSource="{{fromOther}}"></com-reward>
+    </view>
+
+    <!-- ta们在参与 -->
+    <view class="layor-bgc">
+      <com-partList headImgList="{{headImgList}}"></com-partList>
+    </view>
+    <!-- 活动规则 -->
+    <view class="layor-bgc">
+      <com-rule ruleInfo="{{ruleInfo}}"></com-rule>
+    </view>
+    <com-icon></com-icon>
+  </view>
+</form>

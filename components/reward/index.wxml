@@ -1,0 +1,20 @@
+<view class="container-home" wx:if="{{fromSource=='home'}}">
+  <view class="layor">
+    <text class="title">活动奖励:</text>
+    <view class="info">
+      <text>{{rewardInfo}}</text>
+    </view>
+  </view>
+</view>
+
+<view class="container" wx:elif="{{fromSource=='other'}}">
+  <view class="layor">
+    <view class="title-layor">
+      <view class="line"></view><text class="title">活动奖励</text><view class="line"></view>
+    </view>
+    <view class="info">
+      <text>{{rewardInfo}}</text>
+    </view>
+  </view>
+</view>
+

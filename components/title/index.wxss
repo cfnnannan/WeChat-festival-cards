@@ -1,0 +1,15 @@
+.layor-win .header-type {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 20rpx;
+}
+.layor-win {
+  padding: 0 8rpx;
+}
+.layor-win .header-type text {
+  font-size: 34rpx;
+  font-weight: 600; 
+  color: #dd2e1b;
+  text-align: center;
+}

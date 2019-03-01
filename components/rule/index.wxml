@@ -1,0 +1,10 @@
+<view class="container">
+  <view class="layor">
+    <view class="title-layor">
+      <view class="line"></view><text class="title">活动规则</text><view class="line"></view>
+    </view>
+    <view class="info">
+      <text>{{ruleInfo}}</text>
+    </view>
+  </view>
+</view>

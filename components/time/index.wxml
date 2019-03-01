@@ -1,0 +1,9 @@
+<view class="home-container" wx:if="{{fromSource=='home'}}">
+  <image class="clock" src="/components/z-image/clock.png"></image>
+  <text class="time">{{ruleTime}}</text>
+  <text>自动开奖</text>
+</view>
+
+<view class="container" wx:elif="{{fromSource=='other'}}">
+  <text>自动开奖：{{ruleTime}}</text>
+</view>

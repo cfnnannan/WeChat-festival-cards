@@ -1,0 +1,9 @@
+<view class="container">
+  <view class="layor" bind:tap="routeFn">
+    <view class="left">
+      <image class="icon" src="/components/z-image/icon-two.png"></image>
+      <text>中奖纪录</text>
+    </view>
+    <image class="right" src="/components/z-image/arrow.png"></image>
+  </view>
+</view>

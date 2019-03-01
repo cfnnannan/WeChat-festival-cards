@@ -1,0 +1,43 @@
+<form bindsubmit="formSubmit" report-submit="true">
+  <view class="container">
+    <view class="first">
+        <image class="header-content" src="/components/z-image/layor-header.png"></image>
+        <view class="user-content">
+          <image class="avatar" src="{{avatarUrl}}"></image>
+          <button class="first-identity">福主</button>
+        </view>
+    </view>
+    <view class="second">
+      <view class="item" wx:if="{{showAssistanceAvatarOne}}">
+        <image src="{{showAssistanceAvatarOne?avatorOne:showNoAvator}}"></image>
+        <text>祝福平安</text>
+      </view>
+      <block wx:else>
+        <button formType="submit" class="item" open-type="share">
+          <image src="{{showAssistanceAvatarOne?avatorOne:showNoAvator}}"></image>
+          <text>祝福平安</text>
+        </button>
+      </block>
+      <view class="item" wx:if="{{showAssistanceAvatarTwo}}">
+        <image src="{{showAssistanceAvatarTwo?avatorTwo:showNoAvator}}"></image>
+        <text>祝福健康</text>
+      </view>
+      <block wx:else>
+        <button formType="submit" class="item" open-type="share">
+          <image src="{{showAssistanceAvatarTwo?avatorTwo:showNoAvator}}"></image>
+          <text>祝福健康</text>
+        </button>
+      </block>
+      <view class="item" wx:if="{{showAssistanceAvatarThree}}">
+        <image src="{{showAssistanceAvatarThree?avatorThree:showNoAvator}}"></image>
+        <text>祝福长寿</text>
+      </view>
+      <block wx:else>
+        <button formType="submit" class="item" open-type="share">
+          <image src="{{showAssistanceAvatarThree?avatorThree:showNoAvator}}"></image>
+          <text>祝福长寿</text>
+        </button>
+      </block>
+    </view>
+  </view>
+</form>

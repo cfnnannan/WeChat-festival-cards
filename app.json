@@ -1,0 +1,34 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/share/share",
+    "pages/details/details",
+    "pages/mine/mine",
+    "pages/mine-details/mine-details",
+    "pages/mine-join/mine-join"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#eb5745",
+    "navigationBarTextStyle": "white",
+    "navigationBarTitleText": "新春福利"
+  },
+  "tabBar": {
+    "selectedColor": "#3eceb6",
+    "color": "#c2c9c9",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "image/home.png",
+        "selectedIconPath": "image/home-active.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "image/mine.png",
+        "selectedIconPath": "image/mine-active.png"
+      }
+    ]
+  }
+}

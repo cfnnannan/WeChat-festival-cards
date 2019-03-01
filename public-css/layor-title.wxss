@@ -1,0 +1,15 @@
+.container .layor .title-layor {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24rpx 0;
+
+}
+.container .layor .title-layor .line {
+  width: 52rpx;
+  height: 2rpx;
+  background: #2d2d2d;
+}
+.container .layor .title-layor .title {
+  padding: 0 22rpx
+}

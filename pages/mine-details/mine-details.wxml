@@ -1,0 +1,54 @@
+<view class="body-home">
+  <block wx:if="{{winRecordList.length < 1}}">
+    <view class="container-empty">
+      <view class="layor">
+        <image src="/image/empty.png"></image>
+        <text>暂无中奖信息，多参与活动，再接再厉</text>
+      </view>
+    </view>
+  </block>
+
+  <block wx:else>
+    <view class="container" wx:for="{{winRecordList}}" wx:key='{{index}}'>
+      <view class="layor-top">
+        <view class="left">
+          <text class="first-line">{{item.hospitalName}}{{item.activityName}}</text>
+          <text class="second-line">{{item.winName}}</text>
+          <text class="third-line">奖励到期：{{item.dealTime}}</text>
+        </view>
+
+        <view class="right">
+          <block wx:if="{{item.status == 0}}">
+            <button class="btn" bind:tap="confirmUseRecord" data-id="{{item.recordId}}" data-index="{{index}}">立即使用</button>
+          </block>
+          <block wx:else>
+            <button class="btn disable">已使用</button>
+          </block>
+          <button class="bottom" bind:tap="handelUseRule" data-index="{{index}}"><text>使用规则</text><image class="{{showUseRule[index]?'icon-deg-top': 'icon-deg-bom'}}" src="/image/down.png"></image></button>
+        </view>
+      </view>
+      <view class="layor-bottom" wx:if="{{showUseRule[index]}}">
+        <view class="msg">{{item.useRule}}</view>
+      </view>
+    </view>
+  </block>
+</view>
+
+
+<!-- 点击使用弹框 -->
+<view class="model">
+  <view class="mask" wx:if="{{showModal}}" bind:tap='cancelModel'></view>
+  <view class="modal-dlg" wx:if="{{showModal}}">
+    <image class="face-icon" src="/image/show@userRecord.png"></image>
+    <view class="title">
+      <text class="top">使用确认</text>
+      <text>我已详细阅读"使用规则"</text>
+      <text>确认使用奖励号: {{recordId}}</text>
+    </view>
+    <view class="confirm-btn">
+      <button bind:tap="cancelModel">取消</button>
+      <button bind:tap="useWinRecord">确定</button>
+    </view>
+  </view>
+</view>
+

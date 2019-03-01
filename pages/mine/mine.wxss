@@ -1,0 +1,26 @@
+.header-container {
+  background: #3eceb6;
+  padding-left: 56rpx;
+  height: 172rpx;
+  display: flex;
+}
+.header-container .user-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin:0;
+  padding: 0;
+  color:#2d2d2d;
+  background:transparent;
+
+}
+.header-container .user-header .avatar{
+  width: 100rpx;
+  height: 100rpx;
+  margin-right: 28rpx;
+  border-radius: 50%;
+}
+.header-container .user-header .text {
+  color: #fff;
+  font-size: 32rpx;
+}

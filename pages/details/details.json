@@ -1,0 +1,12 @@
+{
+  "usingComponents": {
+    "com-reward": "../../components/reward/index",
+    "com-rule": "../../components/rule/index",
+    "com-help": "../../components/help/index",
+    "com-title": "../../components/title/index",
+    "com-time": "../../components/time/index",
+    "com-list": "../../components/list/index",
+    "com-partList": "../../components/part-list/index",
+    "com-icon": "../../components/suspend-icon/index"
+  }
+}

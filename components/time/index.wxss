@@ -1,0 +1,24 @@
+.home-container {
+  padding: 20rpx;
+  font-size: 22rpx;
+  line-height: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.home-container .clock {
+  width: 24rpx;
+  height: 24rpx;
+}
+.home-container .time {
+  display: inline-block;
+  margin: 0 20rpx 0 10rpx;
+}
+.home-container text {
+  color: #989898;
+}
+
+.container text {
+  color: #f9f1b8;
+  font-size: 22rpx;
+}

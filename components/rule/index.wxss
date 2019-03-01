@@ -1,0 +1,12 @@
+@import "/public-css/layor-title.wxss";
+.container .layor {
+  padding: 0 20rpx;
+}
+.container .layor .info {
+  font-size: 26rpx;
+  text-align: justify;
+}
+.container .layor .info text {
+  line-height: 42rpx;
+  text-align: justify;
+}

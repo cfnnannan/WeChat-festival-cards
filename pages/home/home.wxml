@@ -1,0 +1,15 @@
+<view class="body-home">
+  <view class="container" wx:for="{{homeList}}" wx:key='{{index}}'>
+    <view bind:tap="getDetailFn" data-activityId="{{item.activityId}}">
+      <image class="banner" src="{{item.bannerUrl}}">
+        <view  class="tips" hidden="{{partIdList[index] == -1}}">已参加</view>
+      </image>
+      <view class="body-home-title">{{item.hospitalName}}{{item.activityName}}活动</view>
+      <com-reward hospitalName="{{item.hospitalName}}" 
+      rewardInfo="{{item.activityAward }}" 
+      activityName="{{item.activityName}}"
+      fromSource="{{fromHome}}"></com-reward>
+      <com-time ruleTime="{{item.openTime}}" fromSource="{{fromHome}}"></com-time>
+    </view>
+  </view>
+</view>

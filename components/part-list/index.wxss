@@ -1,0 +1,17 @@
+@import "/public-css/layor-title.wxss";
+.per-list {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+  height: 94rpx;
+}
+.per-list .header {
+  width: 66rpx;
+  height: 66rpx;
+  margin-left: -23rpx;
+  border-radius: 50%;
+}
+.per-list .header:first-child {
+  margin-left: 0;
+}

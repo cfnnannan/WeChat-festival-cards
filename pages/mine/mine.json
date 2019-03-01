@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "com-join": "../../components/join/index",
+    "com-result": "../../components/win-result/index"
+  },
+  "navigationBarTitleText": "个人中心",
+  "navigationBarBackgroundColor": "#fff",
+  "navigationBarTextStyle": "black"
+}

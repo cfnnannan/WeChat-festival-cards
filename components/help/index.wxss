@@ -1,0 +1,69 @@
+.container .first {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20rpx 0 50rpx 0;
+  position: relative;
+}
+.container .first .header-content {
+  position: relative;
+  width: 251rpx;
+  height: 195rpx;
+  z-index: 100;
+}
+.container .first .user-content {
+  position:absolute;
+  top: 35rpx;
+  z-index:99;
+}
+.container .first .user-content .avatar{
+  width: 190rpx;
+  height: 190rpx;
+}
+.container .first .first-identity {
+  background: #ff613a;
+  color: #fff;
+  border: 2px solid #fff;
+  border-radius: 50rpx;
+  width: 150rpx;
+  height: 60rpx;
+  font-size: 34rpx;
+  line-height: 50rpx;
+  position: absolute;
+  bottom: -20rpx;
+  padding: 0;
+  left:22rpx;
+}
+.container image {
+  width: 120rpx;
+  height: 120rpx;
+  margin-bottom: 12rpx;
+  border-radius: 50%;
+}
+.container .second {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  border-radius: 15rpx;
+  padding: 20rpx 0;
+}
+.container .second .item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position:relative;
+  margin: 0;
+  padding: 0;
+  background:transparent;
+  line-height: 48rpx;
+}
+.container .second .item text {
+  font-size: 28rpx;
+}
+
+button.item {
+  background: transparent;
+  width: auto;
+}
